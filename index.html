@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit Converter</title>
+    <link rel="stylesheet" href="stytle.css">
+    
+</head>
+<body>
+    <div class="container">
+    <div id="heading">
+        <h1>Celsius to Fahrenheit Converter</h1>
+    </div>
+    <div id="converter">
+        <div class="celsius"><span>Enter Celsius:</span>
+        <input id="celsius" type="text"></div>
+        <button onclick="calculate()">Calculate</button><br>
+        <div class="Fahrenheit"><span>Result:</span>
+        <input id="ans" type="text"></div>
+    </div>
+</div>
+    
+</body>
+<script>
+    function calculate(){
+        var a=document.getElementById("celsius").value;
+        var c=(a*1.8)+32;
+        document.getElementById("ans").value=parseFloat(c); 
+    }
+</script>
+</html>
